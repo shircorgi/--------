@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #22254b;
+        font-family: "Poppins", "sans-serif";
+        margin: 0;
+      }
+
+      header {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        background: #373b69;
+      }
+
+      .search {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        font-family: inherit;
+        font-size: 0.8rem;
+        padding: 0.8rem 1rem;
+        color: aliceblue;
+      }
+
+      .search::placeholder {
+        color: #7378c5;
+        font-size: 0.8rem;
+      }
+
+      .search:focus {
+        outline: none;
+        background-color: #22254b;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <form action="" id="form">
+        <input type="text" id="search" class="search" placeholder="Search" />
+      </form>
+    </header>
+    <main class="main"></main>
+  </body>
+</html>
