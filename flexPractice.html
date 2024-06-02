@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Practice</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        transition: all 0.5s;
+      }
+
+      a:hover {
+        background-color: #fff;
+      }
+
+      #main {
+        display: flex;
+        flex: 1;
+      }
+
+      header {
+        height: 150px;
+        line-height: 150px;
+        background-color: lightblue;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2,
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      nav {
+        background-color: lightpink;
+        height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      article {
+        padding: 50px;
+        flex: 2;
+      }
+
+      aside {
+        padding: 50px;
+        background-color: lightgrey;
+        flex: 1;
+      }
+
+      footer {
+        background-color: pink;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Webpage</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Q&A</a>
+    </nav>
+    <div id="main">
+      <article>
+        <h2>About me</h2>
+        <h3>Introduce:</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          maxime obcaecati, maiores similique voluptatibus animi perferendis
+          ducimus cum? Laudantium nemo possimus ducimus alias? Quae asperiores
+          sed repellendus, aspernatur culpa suscipit.
+        </p>
+      </article>
+      <aside>
+        <h2>AD</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+          suscipit nulla quas ipsa iure voluptate delectus dolorem inventore
+          fugit quibusdam mollitia sint assumenda animi hic quasi, molestias
+          tempore nesciunt provident!
+        </p>
+      </aside>
+    </div>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>
